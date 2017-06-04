@@ -1,0 +1,373 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="mindtrack.muslimorganizer.ui.fragments.WeatherFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/cal_back"
+        android:orientation="vertical">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:orientation="vertical">
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp">
+
+               <ImageView
+                   android:layout_width="20dp"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="3dp"
+                   android:id="@+id/imageView6"
+                   android:src="@drawable/ic_sun"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="@dimen/small"
+                   android:text="---"
+                   android:textColor="@color/white"
+                   android:id="@+id/textView20" />
+
+           </LinearLayout>
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="10dp">
+
+               <ImageView
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:src="@drawable/humidity"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="5dp"
+                   android:textSize="@dimen/small"
+                   android:text="---"
+                   android:textColor="@color/white"
+                   android:id="@+id/humidity"
+                   />
+
+               <ImageView
+                   android:layout_width="20dp"
+                   android:layout_height="23dp"
+                   android:src="@drawable/pinwheel"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="5dp"
+                   android:textSize="@dimen/small"
+                   android:text="---"
+                   android:textColor="@color/white"
+                   android:id="@+id/windSpeed"
+                   />
+
+           </LinearLayout>
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="left"
+                   android:textSize="@dimen/main_weather_font"
+                   android:layout_marginLeft="15dp"
+                   android:text="---"
+                   android:textColor="@color/white"
+                   android:id="@+id/textView29" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="---"
+                   android:layout_marginRight="10dp"
+                   android:layout_gravity="center"
+                   android:textSize="@dimen/small"
+                   android:textColor="@color/white"
+                   android:id="@+id/tv_city_name"
+                   android:layout_centerHorizontal="true"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"/>
+
+           </RelativeLayout>
+
+       </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/weather_day"
+            android:layout_alignParentBottom="true"
+            android:background="#BF2a5f54"
+            android:id="@+id/weather"
+            ></android.support.v7.widget.RecyclerView>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:id="@+id/refresh"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/refresh"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/seeking"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/background_port"
+       >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/prayer_split_v"
+            android:layout_marginLeft="@dimen/prayer_split_v"
+            android:layout_marginRight="@dimen/prayer_split_v"
+            android:layout_weight="1"
+            card_view:cardBackgroundColor="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/mid"                    android:layout_weight="0.6"
+                    android:textColor="@color/white"
+                    android:text="No internet"
+                    android:paddingLeft="15dp"
+                    android:gravity="center|left"
+                    android:id="@+id/day1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="right|center"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/mid"                    android:text="--/--"
+                    android:id="@+id/day1Temp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/ic_sun"
+                    android:id="@+id/day1Imgae" />
+
+            </LinearLayout>
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/prayer_split_v"
+            android:layout_marginLeft="@dimen/prayer_split_v"
+            android:layout_marginRight="@dimen/prayer_split_v"
+            android:layout_weight="1"
+            card_view:cardBackgroundColor="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/mid"                    android:layout_weight="0.6"
+                    android:textColor="@color/white"
+                    android:text="No internet"
+                    android:paddingLeft="15dp"
+                    android:gravity="center|left"
+                    android:id="@+id/day2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="right|center"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/mid"                    android:text="--/--"
+                    android:id="@+id/day2temp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/ic_sun"
+                    android:id="@+id/day2Image" />
+
+            </LinearLayout>
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/prayer_split_v"
+            android:layout_marginLeft="@dimen/prayer_split_v"
+            android:layout_marginRight="@dimen/prayer_split_v"
+            android:layout_weight="1"
+            card_view:cardBackgroundColor="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/mid"                    android:layout_weight="0.6"
+                    android:textColor="@color/white"
+                    android:text="No internet"
+                    android:paddingLeft="15dp"
+                    android:gravity="center|left"
+                    android:id="@+id/day3" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="right|center"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/mid"                    android:text="--/--"
+                    android:id="@+id/day3temp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/ic_sun"
+                    android:id="@+id/day3Image" />
+
+            </LinearLayout>
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/prayer_split_v"
+            android:layout_marginLeft="@dimen/prayer_split_v"
+            android:layout_marginRight="@dimen/prayer_split_v"
+            android:layout_marginBottom="@dimen/prayer_split_v"
+            android:layout_weight="1"
+            card_view:cardBackgroundColor="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/mid"                    android:layout_weight="0.6"
+                    android:textColor="@color/white"
+                    android:text="No internet"
+                    android:paddingLeft="15dp"
+                    android:gravity="center|left"
+                    android:id="@+id/day4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="right|center"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/mid"                    android:text="--/--"
+                    android:id="@+id/day4temp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:src="@drawable/ic_sun"
+                    android:id="@+id/day4Image" />
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

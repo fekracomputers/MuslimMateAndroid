@@ -1,0 +1,55 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mindtrack.muslimorganizer.ui.activity.MainActivity">
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_compass_n"
+        android:title="@string/action_compass"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_location"
+        android:icon="@drawable/ic_location"
+        android:title="@string/action_location"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_convert_date"
+        android:title="@string/action_convert_date"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mosques"
+        android:title="@string/action_mosque"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/worldpraye"
+        android:title="@string/action_world"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_rate_app"
+        android:title="@string/action_rate_app"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/action_share"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_about_app"
+        android:title="@string/action_about_app"
+        app:showAsAction="never" />
+
+
+</menu>

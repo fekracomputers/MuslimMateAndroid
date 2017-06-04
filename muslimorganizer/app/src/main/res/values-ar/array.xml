@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="HIJRI_MONTHS">
+        <item>@string/month1</item>
+        <item>@string/month2</item>
+        <item>@string/month3</item>
+        <item>@string/month4</item>
+        <item>@string/month5</item>
+        <item>@string/month6</item>
+        <item>@string/month7</item>
+        <item>@string/month8</item>
+        <item>@string/month9</item>
+        <item>@string/month10</item>
+        <item>@string/month11</item>
+        <item>@string/month12</item>
+    </string-array>
+
+    <string-array name="months">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="methods">
+        <item>@string/calcType1</item>
+        <item>@string/calcType2</item>
+        <item>@string/calcType3</item>
+        <item>@string/calcType4</item>
+        <item>@string/calcType5</item>
+    </string-array>
+
+    <string-array name="methods_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="mazhab">
+        <item>@string/mazhab1</item>
+        <item>@string/mazhab2</item>
+    </string-array>
+
+
+    <string-array name="language">
+        <item>@string/lang1</item>
+        <item>@string/lang2</item>
+    </string-array>
+
+
+    <array name="select_Country">
+        <item>@string/select_city</item>
+    </array>
+
+
+
+</resources>

@@ -1,0 +1,123 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mindtrack.muslimorganizer.ui.activity.SelectPositionActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+
+    <FrameLayout
+        android:id="@+id/fullscreen_content"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <fragment
+            android:id="@+id/map_frag"
+            class="mindtrack.muslimorganizer.ui.fragments.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginTop="10dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:gravity="center"
+            android:background="@color/black_overlay"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/get_position_manual"
+            android:id="@+id/get_position_manual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="20dp" />
+
+        </FrameLayout>
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_position_back"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_current_position"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/current_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/sp_country"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/sp_city"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_current_cancel"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:gravity="center"
+                    android:textColor="@color/cast_intro_overlay_button_background_color"
+                    android:text="@string/cancel"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+                <Button
+                    android:id="@+id/btn_current_ok"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:gravity="center"
+                    android:textColor="@color/cast_intro_overlay_button_background_color"
+                    android:text="@string/ok"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

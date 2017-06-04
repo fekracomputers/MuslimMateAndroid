@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2a5f54</color>
+    <color name="colorPrimaryDark">#224841</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorFragment">#e3e3e3</color>
+    <color name="colorTextFragment">#000000</color>
+    <color name="transparentWhite">#BFFFFFFF</color>
+
+    <!--old app colors-->
+
+    <color name="transparent_black">#88000000</color>
+    <color name="transparent_white">#fafafa</color>
+    <color name="white">#FFFFFF</color>
+    <color name="calendar_top_border">#212e3d</color>
+    <color name="calendar_middle">#4b627a</color>
+    <color name="calendar_grey">#949494</color>
+    <color name="calendar_blue">#4c6378</color>
+    <color name="watermelon">#e64a3c</color>
+    <color name="graph_background">#D2D3D5</color>
+    <color name="graph_axis">#727272</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="work">#435b75</color>
+    <color name="learn">#e84c3d</color>
+    <color name="health">#f1c411</color>
+    <color name="money">#2bb345</color>
+    <color name="fun">#0066cb</color>
+    <color name="charity">#656364</color>
+    <color name="family">#2cca90</color>
+    <color name="other">#e67c0b</color>
+    <color name="black">#000000</color>
+
+    <color name="black_overlay">#11000000</color>
+
+</resources>

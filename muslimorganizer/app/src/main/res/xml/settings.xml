@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/setting_category1">
+
+        <ListPreference
+            android:defaultValue="180"
+            android:entries="@array/language"
+            android:entryValues="@array/methods_value"
+            android:key="language"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/language"
+            android:summary="@string/language_summary"/>
+
+        <CheckBoxPreference
+            android:key="hour"
+            android:title="@string/hour"
+            android:summary="@string/hour_summary"
+            android:defaultValue="false"/>
+
+        <CheckBoxPreference
+            android:key="notification_azkar"
+            android:title="@string/azkar_notification"
+            android:summary="@string/Azkar_notification_summary"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/setting_category2">
+
+        <CheckBoxPreference
+            android:key="notification_prayer"
+            android:title="@string/praying_notification"
+            android:summary="@string/praying_notification_summary"
+            android:defaultValue="true"/>
+
+        <CheckBoxPreference
+            android:key="silent"
+            android:title="@string/silent"
+            android:summary="@string/silent_summary"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="vibration"
+            android:title="@string/vibration"
+            android:summary="@string/vibration_summary"
+            android:defaultValue="true"/>
+
+        <CheckBoxPreference
+            android:key="led"
+            android:title="@string/led"
+            android:summary="@string/led_summary"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="day_light"
+            android:title="@string/day_light"
+            android:summary="@string/day_light_summery"
+            android:defaultValue="false"/>
+
+        <ListPreference
+            android:defaultValue="180"
+            android:entries="@array/methods"
+            android:entryValues="@array/methods_value"
+            android:key="calculations"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/calculation_type"
+            android:summary="@string/calculation_type_summary"/>
+
+        <ListPreference
+            android:defaultValue="180"
+            android:entries="@array/mazhab"
+            android:entryValues="@array/methods_value"
+            android:key="mazhab"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/mazhab"
+            android:summary="@string/mazhab_summary"/>
+
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

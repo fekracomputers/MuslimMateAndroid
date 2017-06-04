@@ -1,0 +1,57 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="prayer_info">150dp</dimen>
+
+    <!--old app data-->
+
+    <dimen name="small_margin">3dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="double_margin">20dp</dimen>
+    <dimen name="occasions_margin">20dp</dimen>
+    <dimen name="margin_times_four">40dp</dimen>
+    <dimen name="huge_margin">60dp</dimen>
+    <dimen name="ex_margin">85dp</dimen>
+
+    <dimen name="xx_margin">130dp</dimen>
+    <dimen name="xxx_margin">140dp</dimen>
+    <dimen name="xxxx_margin">170dp</dimen>
+
+
+    <dimen name="main_clock_small_top_margin">205dp</dimen>
+    <dimen name="main_clock_top_margin">245dp</dimen>
+    <dimen name="main_clock_left_margin">265dp</dimen>
+    <dimen name="main_clock_large_left_margin">290dp</dimen>
+    <dimen name="prayer_times_font">30sp</dimen>
+    <dimen name="main_title_large">21sp</dimen>
+    <dimen name="mini_font">10sp</dimen>
+    <dimen name="main_sub_title_large">15sp</dimen>
+    <dimen name="main_remaining_time">40sp</dimen>
+    <dimen name="x_large_font">50sp</dimen>
+    <dimen name="xx_large_font">66sp</dimen>
+
+    <dimen name="cell_calender">50dp</dimen>
+    <dimen name="weather_day">80dp</dimen>
+    <dimen name="main_weather_font">80sp</dimen>
+    <dimen name="weather_day_icon">25dp</dimen>
+    <dimen name="weather_day_padding_icons">8dp</dimen>
+    <dimen name="weather_day_font">15sp</dimen>
+
+    <dimen name="date_number">30sp</dimen>
+    <dimen name="mid">18sp</dimen>
+    <dimen name="small">15sp</dimen>
+    <dimen name="larg">25sp</dimen>
+    <dimen name="very_small">12sp</dimen>
+
+    <dimen name="azkar">50dp</dimen>
+    <dimen name="event">80dp</dimen>
+
+    <dimen name="about_text_size">16sp</dimen>
+
+    <dimen name="next_prev_cal_dimen">30dp</dimen>
+
+
+</resources>
