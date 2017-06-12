@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/fekracomputers/MuslimMateAndroid.svg?branch=master)](https://travis-ci.org/fekracomputers/MuslimMateAndroid)
 
-# Islamic Library 
+# MuslimMate
 
 Muslim mate is an android application to organize Muslims life.
 
